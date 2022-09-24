@@ -6,6 +6,9 @@
 * Natya Madya Marciola	(5025201238)
 * Neisa Hibatillah Alif	(5025201170)
 
+### Kendala pengerjaan?
+* Terdapat kebingungan pada soal yang tertuliskan "Mengambil" atau "Menampilkan", walaupun telah diberi file .pcapng, yang berarti sudah ter-capture dan hanya dapat menggunakan display filter dalam pengerjaan.
+
 ### Nomor 1 (menggunakan soal1-2.pcapng)
 Pertama, masukkan ```http.host == “monta.if.its.ac.id”``` pada display filter
 ![ss1](https://user-images.githubusercontent.com/91374949/192082566-dd62dd4f-65cd-4071-b03f-b0362064894c.jpg)
