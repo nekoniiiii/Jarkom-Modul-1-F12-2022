@@ -7,7 +7,7 @@
 * Neisa Hibatillah Alif	(5025201170)
 
 ### Kendala pengerjaan?
-* Terdapat kebingungan pada soal yang tertuliskan "Mengambil" atau "Menampilkan", walaupun telah diberi file .pcapng, yang berarti sudah ter-capture dan hanya dapat menggunakan display filter dalam pengerjaan.
+* Terdapat keambiguan pada nomor 4 dan 5 mengenai perintah yang harus dilakukan sehingga pada laporan ini ditampilkan kedua cara.
 
 ### Nomor 1 (menggunakan soal1-2.pcapng)
 Pertama, masukkan ```http.host == “monta.if.its.ac.id”``` pada display filter
@@ -123,5 +123,4 @@ Dari output file yang didapat dari nomor 10 akan terdapat flag yang tertulis :
 ![image](https://user-images.githubusercontent.com/80830860/192079002-f9ae97e3-b296-4975-9b66-627d14452253.png)
 
 
-### Kendala
-Terdapat keambiguan pada nomor 4 dan 5 mengenai dimana perintah harus dilakukan sehingga pada laporan ini ditampilkan kedua cara.
+
