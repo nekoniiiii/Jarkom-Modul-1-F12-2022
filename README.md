@@ -69,6 +69,19 @@ Pertama, cari ip pada cmd menggunakan ```ipconfig```.<br>
 Setelah ip address didapat, lakukan perintah ```src host 192.168.1.13``` pada capture filter.<br>
 ![7 2](https://user-images.githubusercontent.com/72701806/192085229-14f44073-2d8a-4a61-b0d5-06950a7b070b.png)
 
+### Nomor 8 (menggunakan nomor8-10.pcapng)
+Gunakan display filter dengan parameter berikut ini dan follow TCP stream yang berhubungan dengan percakapan yang ada.
+* tcp.stream eq 12 (Percakapan pertama)
+![image](https://user-images.githubusercontent.com/80830860/192101250-92804357-4880-4417-931e-06a7972c422c.png)
+
+
+* tcp.stream eq 41 (Percakapan kedua)
+![image](https://user-images.githubusercontent.com/80830860/192101266-ad5460a8-e9c9-427e-8414-5e3bcaaa4d76.png)
+
+
+* tcp.stream eq 90 (Percakapan ketiga)
+![image](https://user-images.githubusercontent.com/80830860/192101278-3ebc45f1-382f-4efd-84aa-823c01acaa0d.png)
+
 
 ### Nomor 9 (menggunakan nomor8-10.pcapng)
 Pertama, isi display filter dengan parameter berikut
