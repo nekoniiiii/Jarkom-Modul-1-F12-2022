@@ -27,6 +27,49 @@ Selanjutnya, ketikkan **detailTopik/194**  pada bagian ```Find``` untuk mempermu
 Untuk menampilkan paket yang hanya menuju port 80 bisa dilakukan dengan mengisi display filter dengan ```tcp.dstport == 80 || udp.dstport == 80```. Kemudian hasilnya akan muncul sebagai berikut.
 ![ss3](https://user-images.githubusercontent.com/91374949/192083386-36aeabd1-2c3b-4a1a-ae74-c963f759406e.jpg)
 
+
+### Nomor 4
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!
+#### Jawaban:
+Karena perintah pada soal adalah "mengambil", maka perlu dilakukan perintah pada capture filter menggunakan ```src port 21```.<br>
+![4 1](https://user-images.githubusercontent.com/72701806/192085176-2d2cc742-e784-4dfa-95d9-574f77d5df40.png)
+
+#### Alternatif jawaban:
+Karena telah diberikan file ```soal3-6.pcap```, maka asumsikan bahwa jawaban hanya bisa didapat dari file tersebut. Karena telah di-capture pada file, maka dilakukan perintah ```udp.srcport == 21 || tcp.srcport == 21``` pada display filter.<br>
+![4 2](https://user-images.githubusercontent.com/72701806/192085187-3b6f2bd7-81ef-4df5-b1f8-13b1f415a7f5.jpg)
+
+
+### Nomor 5
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
+#### Jawaban:
+Karena perintah pada soal adalah "mengambil", maka perlu dilakukan perintah pada capture filter menggunakan ```src port 443```.<br>
+![5 1](https://user-images.githubusercontent.com/72701806/192085194-eafce842-8954-4c2f-9e59-d16cba6db099.png)
+
+#### Alternatif jawaban:
+Sama seperti nomor sebelumnya, asumsikan bahwa jawaban hanya bisa didapat dari file tersebut. Karena telah di-capture pada file, maka dilakukan perintah ```udp.srcport == 443 || tcp.srcport == 443``` pada display filter.<br>
+![5 2](https://user-images.githubusercontent.com/72701806/192085204-2071d9dd-6e95-4882-b6a3-2210bdb826e8.png)
+
+
+### Nomor 6
+Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
+#### Jawaban:
+Pertama, cari ip dari lipi.go.id pada cmd menggunakan ```ping lipi.go.id```.<br>
+![6 1](https://user-images.githubusercontent.com/72701806/192085214-87ae95e3-08e6-44b4-bf31-3cd75a5c1be2.png)
+
+Setelah ip address didapat, isi display filter dari file ```soal3-6.pcap``` dengan ```ip.dst == 203.160.128.158```.<br>
+![6 2](https://user-images.githubusercontent.com/72701806/192085219-3333e819-8f76-4d40-a9bf-0f8ff1b8d400.png)
+
+
+### Nomor 7
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+#### Jawaban:
+Pertama, cari ip pada cmd menggunakan ```ipconfig```.<br>
+![7 1](https://user-images.githubusercontent.com/72701806/192085499-4bb9d95e-3f3f-4eb5-bc24-9c8f3c90fc19.png)
+
+Setelah ip address didapat, lakukan perintah ```src host 192.168.1.13``` pada capture filter.<br>
+![7 2](https://user-images.githubusercontent.com/72701806/192085229-14f44073-2d8a-4a61-b0d5-06950a7b070b.png)
+
+
 ### Nomor 9 (menggunakan nomor8-10.pcapng)
 Pertama, isi display filter dengan parameter berikut
 * tcp.port == 9002 || udp.port == 9002
@@ -56,8 +99,13 @@ Menggunakan wsl (di Windows, bila menggunakan Linux langsung bisa menggunaakn co
 
 Source : https://stackoverflow.com/questions/71593315/how-do-i-extract-the-tcp-data-packet-from-wireshark
 
+
 ### Nomor 10
 Dari output file yang didapat dari nomor 10 akan terdapat flag yang tertulis :
 * JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}
 
 ![image](https://user-images.githubusercontent.com/80830860/192079002-f9ae97e3-b296-4975-9b66-627d14452253.png)
+
+
+### Kendala
+Terdapat keambiguan pada nomor 4 dan 5 mengenai dimana perintah harus dilakukan sehingga pada laporan ini ditampilkan kedua cara.
