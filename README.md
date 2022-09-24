@@ -27,6 +27,9 @@ Lakukan "Save as" dengan sesuai dengan format nama yang diinginkan
 
 Menggunakan wsl (di Windows, bila menggunakan Linux langsung bisa menggunaakn command window), masukkan command dibawah ini setelah cd ke folder tempat .des3 tadi berada
 * openssl des3 -d -salt -in {isi ini dengan nama file}.des3 -out flag.txt -k nakano
+* Menggunakan "-k nakano" yang berarti key-nya berupa nakano, didapatkan dari nomor 8 dimana salah satu percakapan menyinggung soal "anime kembar lima"
+* Anime kembar 5 tersebut berjudul "Gotoubun no Hanayome" dimana marga dari kelima anak perempuan tersebut merupakan Nakano.
+
 
 ![image](https://user-images.githubusercontent.com/80830860/192078951-5a273eaf-ba22-4107-a4f5-71f8077a7008.png)
 
